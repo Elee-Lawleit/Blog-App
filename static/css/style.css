@@ -1,0 +1,25 @@
+body{
+    font-size: 2em !important;
+}
+.lead{
+    font-size: 2rem;
+}
+
+.menu{
+    margin-bottom: 5px;
+}
+
+ul li a{
+    padding: 3px 10px;
+    display: inline-block;
+}
+
+.active{
+    color: white !important;
+    background-color: #428bca;
+    border-radius: 10px;
+}
+
+.active a{
+    color: white !important;
+}

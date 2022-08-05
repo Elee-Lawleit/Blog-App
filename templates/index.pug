@@ -1,0 +1,15 @@
+extends base.pug
+
+block page 
+    -var menu = "index";
+
+block content 
+    if (articles.length === 0)
+        | No content has been published yet.
+        a(href="/login") Login
+        | to publish content.
+    else
+        each article, index in articles
+            div
+                h2
+                    a(href="/articles/" + article.slug)= article.title
