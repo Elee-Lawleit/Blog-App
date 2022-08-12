@@ -136,7 +136,7 @@ exports.del = (req, res, next) => {
 //when someone wants to publish an article, they see the post page through the get request
 exports.post = (req, res, next) => {
     if (!req.body.title) {
-        res.render('post', { admin: req.session.admin });
+        res.render('post', { admin: res.locals.admin });
     }
 }
 
@@ -180,7 +180,7 @@ exports.postArticle = (req, res, next) => {
 exports.admin = (req, res, next) => {
     req.collections.articles.find({}, { sort: { _id: -1 } }).toArray((error, articles) => {
             if (error) return next(error);
-            res.render('admin', { articles: articles, admin: req.session.admin });
+            res.render('admin', { articles: articles, admin: res.locals.admin });
         });
 }
 

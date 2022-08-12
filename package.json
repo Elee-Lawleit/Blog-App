@@ -11,14 +11,17 @@
   "dependencies": {
     "body-parser": "^1.20.0",
     "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
     "everyauth": "^0.4.9",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
     "method-override": "^3.0.0",
     "mongodb": "^4.8.1",
+    "morgan": "^1.10.0",
     "pug": "^3.0.2",
     "serve-favicon": "^2.5.0",
-    "stylus": "^0.58.1"
+    "stylus": "^0.58.1",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
